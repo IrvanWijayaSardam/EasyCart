@@ -48,10 +48,9 @@ class CartAdapter(private val listener: CartItemClickListener): RecyclerView.Ada
 
                 override fun afterTextChanged(str: Editable?) {
                     str?.toString()?.let {
-                        if(it.isNotEmpty() && productQty.size > 0){
-                            binding.edtCart.removeTextChangedListener(this)
-                            binding.edtCart.setSelection(it.length)
-                            binding.edtCart.addTextChangedListener(this)
+                        if (it.isNotEmpty()) {
+                            val newQty = it.toInt()
+                            productQty[adapterPosition] = newQty // Update productQty immediately
                         }
                     }
                 }

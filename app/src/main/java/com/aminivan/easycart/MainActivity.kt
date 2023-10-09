@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
             Cart(1,"2","Kopi Susu",1,10000,20000,""),
             Cart(2,"3","Kopi Hitam",2,10000,20000,""),
             Cart(3,"4","Kopi Putih",4,10000,20000,""),
-            Cart(4,"5","Kopi Merah",5,10000,20000,""),
         )
 
 
